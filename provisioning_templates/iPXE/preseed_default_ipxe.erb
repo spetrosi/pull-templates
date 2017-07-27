@@ -6,6 +6,7 @@ model: ProvisioningTemplate
 kind: iPXE
 %>
 
+
 <% if @host.operatingsystem.name == 'Debian' -%>
 <% keyboard_params = "auto=true domain=#{@host.domain}" -%>
 <% else -%>

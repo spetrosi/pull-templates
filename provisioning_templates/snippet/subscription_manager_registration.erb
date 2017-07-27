@@ -5,6 +5,7 @@ snippet: true
 model: ProvisioningTemplate
 %>
 
+
   # add subscription manager
  <% if @host.operatingsystem.atomic? %>
   curl -s <%= subscription_manager_configuration_url(@host, false) %> | IS_ATOMIC=true bash
